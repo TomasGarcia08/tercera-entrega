@@ -1,4 +1,4 @@
-const stockProductos = [
+ const stockProductos = [
   {
     id: 1,
     nombre: "Crash Bandicoot",
