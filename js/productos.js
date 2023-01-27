@@ -96,6 +96,12 @@ function mostrarProductos(array) {
     li.id = item.id;
     li.textContent = $(item.nombre) - $(item.precio)
     
-    ByteLengthQueuingStrategy.append(li);
+    lista.append(li);
   });  
 }
+
+pedirProductos()
+   .then((res) => {
+    productos = res;
+    mostrarProductos 
+   })
