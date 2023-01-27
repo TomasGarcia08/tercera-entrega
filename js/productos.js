@@ -92,6 +92,10 @@ const contenedor = document.querySelector("#contenedor");
 
 function mostrarProductos(array) {
   array.forEach(item => {
+    const li = document.createElement ("li");
+    li.id = item.id;
+    li.textContent = $(item.nombre) - $(item.precio)
     
+    ByteLengthQueuingStrategy.append(li);
   });  
 }
